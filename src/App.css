@@ -3,54 +3,72 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  font-family: 'Work Sans', sans-serif;
   
+}
+
+.App p {
+  font-family: 'Bitter', serif;
 }
 
 body,
 html {
-  width: 100%;
+  max-width: 100%;
+  
   height: 100%;
-}
-
-/* // Typography */
-.text-white-75 {
-  color: fade-out(white, .25);
 }
 
 /* // Custom horizontal rules */
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: primary;
+  
 }
 
-hr.light {
-  border-color: white;
+/* NAVBAR STYLING */
+.navbar {
+  background-color: #00755C;
+  width:100vw;
+}
+.navbar-toggler-icon {
+  background-color: white;
 }
 
-/* // Button restyling */
-.btn {
-  font-family: font-family-sans-serif;
+.js-scroll-trigger {
+  color: white;
+  margin-left: 10px;
 }
+
+.js-scroll-trigger:hover {
+  color: pink;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  color:white;
 }
-/* ALL ABOVE WAS IMPORTED FOR NAV TEMPLATE */
-
 
 
 /* MASTHEAD STYLING  */
 
 .masthead {
   height:100vh;
-  width: 100%;
+  width: 100vw;
   background-color: pink; 
+}
+
+.masthead-text {
+  font-size: 5rem;
+  color: white;
 }
 
 /* SKILLS STYLING  */
@@ -63,36 +81,64 @@ hr.light {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 10vh;
+}
+
+.descriptor-skills {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #00755C;
 }
 
 .skill-card-row {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden
 }
 
 .skill-card-col {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .skills-card-1 , .skills-card-2 , .skills-card-3 {
   margin: 20px;
+  padding: 10px;
+  width: 18rem;
 }
+
+
+
+.skill-icon {
+  color: black;
+}
+
+
 
 
 
 /* PROJECTS STYLING  */
 
 
+.FaProjects {
+  color: #00755C;
+}
+
+.project-category {
+  color: #00755C;
+}
+
 #projects {
-  background-color: rebeccapurple;
+  
   min-height: 50vh ;
   width: 100%;
 }
 
-/* // Styling for the portfolio  */
 section
 #portfolio .container-fluid {
   max-width: 1920px;
@@ -118,7 +164,7 @@ section
   text-align: center;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-  font-family: font-family-sans-serif;
+  
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -131,27 +177,37 @@ section
 }
 
 
-
+/* CONTACT SECTION STYLING  */
 
 #contact {
-  background-color: purple;
+  background-color: white;
   min-height: 50vh ;
   width: 100%;
   align-items: center;
   display: flex;
+  padding:15vh;
 }
 
 .contact-content {
   text-align: center;
 }
 
+
+.FaContact {
+  color: #00755C;
+ }
+
+ /* ABOUT ME STYLING  */
+
 #about {
-  background-color: slateblue;
+  background-color: #00755C;
   min-height: 50vh ;
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 15vh;
+  overflow-x: hidden
 }
 
 .avatar  {
@@ -165,12 +221,20 @@ section
 .about-me {
   width: 50vw;
   justify-content: center;
+  color: white;
 }
 
+/* Footer styling  */
+
 #footer {
-  background-color: pink;
+  background-color: white;
   min-height: 10vh ;
   width: 100%;
+  color: #00755C;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content:center;
 }
 
 
